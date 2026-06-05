@@ -1,0 +1,487 @@
+body {
+    margin: 0;
+}
+
+/*Header Start*/
+
+.headercontainer {
+    border: 1px solid;
+    height: 100px;
+    width: 100%;
+    background-color: hsl(0, 0%, 4%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+
+}
+
+
+.headercontainer img {
+    width: 60px;
+    border-radius: 50%;
+    position: absolute;
+    left: 25px
+}
+
+.headercontainer ul {
+    display: flex;
+    gap: 80px;
+    list-style: none;
+}
+
+.headercontainer ul li a {
+    text-decoration: none;
+    color: hsl(0, 0%, 70%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2em;
+
+
+}
+
+.headercontainer ul li a:hover {
+    color: hsl(0, 0%, 40%);
+
+}
+
+.headercontainer .settingsmenu {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.settingsmenu {
+    position: absolute;
+    left: 300px;
+
+}
+
+/* #settingsicon{
+    position: absolute;
+    left: 100%;
+    cursor: pointer;
+} */
+
+.settingsmenuoptions {
+    position: absolute;
+    top: 130%;
+    /*Distance Below icon*/
+    right: 0;
+
+    background-color: white;
+    min-width: 180px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+
+    display: flex;
+    flex-direction: column;
+
+    /*Hidden State*/
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-15px) scale(0.95);
+
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease,
+        visibility 0.3s ease;
+
+}
+
+.settingsmenuoptions a {
+    padding: 12px 6px;
+    text-decoration: none;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 12px;
+
+    transition: background-color 0.2 ease,
+        padding-left 0.2s ease;
+}
+
+
+.settingsmenuoptions a:hover {
+    background-color: #f5f5f5;
+    padding-left: 22px;
+}
+
+#settingsicon {
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
+
+
+.settingsmenu:hover #settingsicon {
+    transform: rotate(180deg);
+}
+
+
+.settingsmenu:hover .settingsmenuoptions {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0) scale(1);
+
+    box-shadow: 0 0 10px hsla(0, 0%, 50%, 0.3),
+        0 0 20px hsla(0, 0%, 49%, 0.2),
+        0 10px 30px hsla(0, 0%, 51%, 0.3);
+
+}
+
+
+
+
+
+.usermenu {
+    position: absolute;
+    left: 340px;
+}
+
+.usermenu {
+    position: absolute;
+    right: 50px;
+
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.usermenuoptions {
+    position: absolute;
+    top: 130%;
+    right: 0;
+
+    background: white;
+    min-width: 180px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+
+    display: flex;
+    flex-direction: column;
+
+    /* Hidden state */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-15px) scale(0.95);
+
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease,
+        visibility 0.3s ease;
+}
+
+.usermenu:hover .usermenuoptions {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0) scale(1);
+
+    box-shadow:
+        0 0 10px rgba(0, 140, 255, 0.3),
+        0 0 20px rgba(0, 140, 255, 0.2),
+        0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.usermenuoptions a {
+    padding: 12px 16px;
+    text-decoration: none;
+    color: #333;
+    font-family: Arial, sans-serif;
+    border-radius: 12px;
+
+    transition:
+        background-color 0.2s ease,
+        padding-left 0.2s ease;
+}
+
+.usermenuoptions a:hover {
+    background-color: #f5f5f5;
+    padding-left: 22px;
+}
+
+#usericon {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.usermenu:hover #usericon {
+    transform: scale(1.2);
+}
+
+/*Header End*/
+
+
+
+
+
+/*Main Start*/
+
+.introductioncontainer {
+    margin: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+}
+
+.introductioncontainer video {
+    float: right;
+    width: 450px;
+    border-radius: 15px;
+    margin-left: 15px;
+}
+
+
+
+.mainboxcontainer {
+    clear: both;
+    height: 1000px;
+    border: 1px solid;
+    border-radius: 20px;
+    margin: 30px;
+}
+
+.mainboxoptions {
+    border: 1px solid;
+    width: 19%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+
+.searchcontainer {
+    margin-top: 25px;
+    margin-left: 10px;
+    color: hsl(0, 0%, 10%);
+
+}
+
+.searchcontainer input {
+    border-radius: 20px;
+    margin-left: 3px;
+}
+
+
+.mainboxoptions ul {
+    list-style: none;
+    margin-top: 60px;
+    text-align: start;
+}
+
+.mainboxoptions ul li a {
+    text-decoration: none;
+    color: hsl(0, 0%, 10%);
+    transition: color 0.3s ease;
+}
+
+.mainboxoptions ul li {
+    margin-top: 25px;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.mainboxoptions ul li:hover {
+    transform: translateX(13px);
+}
+
+.mainboxoptions ul li:hover a {
+    color: hsl(206, 86%, 38%);
+}
+
+.postcontainer {
+    position: absolute;
+    top: 65%;
+    left: 23%;
+    width: 60%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+.usersareacontainer {
+    border: 1px solid;
+    border-radius: 10px;
+    box-shadow: 0 0 3px black;
+
+    min-height: 250px;
+    width: 100%;
+    position: absolute;
+    top: 65%;
+    left: 23%;
+
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 15px;
+
+    position: static;
+}
+
+.usersareacontainer img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.usercontent {
+    flex: 1;
+}
+
+.userheader {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.username {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.posttime {
+    color: gray;
+    font-size: 0.9rem;
+}
+
+.usertext {
+    margin-top: 10px;
+    border: 1px solid hsl(0, 0%, 60%);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.userinteractions {
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.userinteractions i {
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: transform 0.2s ease;
+}
+
+.userinteractions i:hover {
+    transform: scale(1.2);
+}
+
+
+.usersareacontainer label {
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    left: 13%;
+    top: 12%;
+}
+
+/*Users post Start*/
+
+.userspostcontainer {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin: 30px;
+    margin-bottom: 15px;
+}
+
+.userpostcontent {
+    display: flex;
+    flex-direction: column;
+}
+
+.userpostheader {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.userspostcontainer #avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+
+}
+
+.userpostusername {
+    font-size: 1.3rem;
+    margin: 12px;
+    font-weight: bold;
+}
+
+.userposttime {
+    font-family: sans-serif;
+}
+
+.userposttext {
+    margin-top: 8px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1em;
+}
+
+
+
+.userpost {
+    border: 1px solid;
+    width: 650px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+.userpost img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.userspostcontainer .userinteractions {
+    margin-bottom: 12px;
+}
+
+
+/*Users post end*/
+
+/*Main End*/
+
+/*Footer Start*/
+
+.footercontainer {
+    border: 1px solid;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    background-color: hsl(0, 0%, 4%);
+    color: hsl(0, 0%, 40%);
+}
+
+.footercontainer i {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    border-radius: 50%;
+    padding: 5px;
+    transition: transform 0.3s ease,
+        background 0.2s ease;
+    ;
+}
+
+.footercontainer i:hover {
+    transform: translateX(13px);
+    background-color: hsl(0, 0%, 60%);
+}
+
+.footercontainer h2 {
+    margin-left: 50px;
+}
+
+/*footer End*/
